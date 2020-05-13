@@ -1,0 +1,109 @@
+\documentclass[12pt]{report}
+
+%%%%% PACKAGES %%%%%
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{cite}
+\usepackage{titlesec}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{mathtools}
+\usepackage{xcolor}
+%\usepackage[
+%	separate-uncertainty = true,
+%	multi-part-units = repeat
+%]{siunitx}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[font=scriptsize]{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{etoolbox}
+\usepackage{indentfirst}
+
+%%%%% CONFIGURATION %%%%%
+\hypersetup{
+	colorlinks,
+	linkcolor={red!50!black},
+	citecolor={blue!50!black},
+	urlcolor={blue!80!black}
+}
+\titleformat{\chapter}{\normalfont\huge}{\thechapter.}{20pt}{\huge}
+\setlength\parindent{2em}
+\lstdefinelanguage{JavaScript}{
+	keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+	keywordstyle=\color{blue}\bfseries,
+	ndkeywords={class, export, boolean, throw, implements, import, this},
+	ndkeywordstyle=\color{darkgray}\bfseries,
+	identifierstyle=\color{black},
+	sensitive=false,
+	comment=[l]{//},
+	morecomment=[s]{/*}{*/},
+	commentstyle=\color{purple}\ttfamily,
+	stringstyle=\color{red}\ttfamily,
+	morestring=[b]',
+	morestring=[b]"
+}
+\lstset{
+	language=JavaScript,
+	backgroundcolor=\color{white},
+	extendedchars=true,
+	basicstyle=\footnotesize\ttfamily,
+	showstringspaces=false,
+	showspaces=false,
+	numbers=left,
+	numberstyle=\footnotesize,
+	numbersep=9pt,
+	tabsize=2,
+	breaklines=true,
+	showtabs=false,
+	captionpos=b
+}
+\newtheorem{theorem}{Twierdzenie}
+\newtheorem{definition}{Definicja}
+\AfterEndEnvironment{theorem}{\noindent\ignorespaces}
+\AfterEndEnvironment{definition}{\noindent\ignorespaces}
+\newcommand{\R}{\mathbb{R}}
+
+%%%%% DOCUMENT START %%%%%
+\begin{document}
+	
+\begin{titlepage}
+	\begin{center}
+		\large 
+		Uniwersytet Jagielloński\\
+		Wydział Matematyki i Informatyki\\
+		kierunek: matematyka komputerowa
+		
+		\vspace{5.0cm}
+		\huge
+		Pokrycia wierzchołkowe k-ścieżkowe w grafach
+		
+		\vspace{1.0cm}
+		\large
+		Oleksandr Malakhov \\
+		nr indeksu: 1130447
+	\end{center}
+	
+	\vspace{3.0cm}
+	\begin{flushright}
+		promotor: dr Jakub Zygadło
+	\end{flushright}
+	
+	\vspace{2.6cm}
+	\begin{center}
+		\footnotesize
+		Kraków 2020
+	\end{center}
+	\tiny\textit{Opracowano zgodnie z Ustawą o prawie autorskim i prawach pokrewnych z dnia 4 lutego 1994 r. (Dz.U. 1994 nr 24 poz. 83) wraz z nowelizacją z dnia 25 lipca 2003 r. (Dz.U. 2003 nr 166 poz. 1610) oraz z dnia 1 kwietnia 2004 r. (Dz.U. 2004 nr 91 poz. 869)}
+\end{titlepage}
+	
+\tableofcontents
+
+\chapter{Wstęp}
+
+
+\end{document}
